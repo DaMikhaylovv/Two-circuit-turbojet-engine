@@ -269,7 +269,6 @@ def get_params_TRDD(init):
     C_ud = 3600 * (q_t * (1 - delta_otb)) / (P_ud * (1 + m))
     G_v = P / P_ud
     L_e = 0.5 * ((1 + q_t * (1-delta_otb))*c_cI_**2 + m*c_cII_**2 - (1+m)*V_n**2)
-    H_u = 42900 # для керосина
     eta_e = L_e / (q_t * (1 - delta_otb) * H_u * 1e3)
     eta_n = ((1 + m) * P_ud * V_n) / L_e
     eta_o = eta_e * eta_n
