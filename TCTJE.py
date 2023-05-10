@@ -276,4 +276,8 @@ def get_params_TRDD(init):
     result['P_ud'] = P_ud
     result['C_ud'] = C_ud
     result['G_v'] = G_v
+    result['T_array'] = [T_v_zv, T_vn_zv, T_k_zv, T_g_zv, T_tk_zv, T_k_zv]
+    result['T_sections'] = ['в', 'вн', 'к', 'г', 'тк', 'т']
+    result['p_array'] = [p_v_zv, p_vn_zv, p_k_zv, p_g_zv, p_tk_zv, p_t_zv, p_cI_zv, p_cII_zv]
+    result['p_sections'] = ['в', 'вн', 'к', 'г', 'тк', 'т', 'c1', 'c2']
     return result
